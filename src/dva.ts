@@ -1,3 +1,9 @@
+/*
+ * @Date: 2022-04-01 21:43:21
+ * @LastEditors: Jokun
+ * @LastEditTime: 2022-04-04 14:16:37
+ * @FilePath: \dida\src\dva.ts
+ */
 import { create } from 'dva-core'
 import { createLogger } from 'redux-logger'
 import createLoading from 'dva-loading'
@@ -12,6 +18,8 @@ function createApp(opt) {
   // }
   app = create(opt)
   app.use(createLoading())
+
+
 
   // 注入model
   if (!registered) {
